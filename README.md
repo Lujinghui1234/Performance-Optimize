@@ -1,9 +1,9 @@
 # Performance-Optimize
-## Use Lightweight Third Party Libraries 
+## 1,Use Lightweight Third Party Libraries 
 ### dayjs(https://day.js.org/)
 dayjs 是一个轻量级的处理时间格式的第三方库，仅需要2kb，内存占用极小，同时拥有和moment相同的API，用dayjs替换项目中的moment
 
-## Cache API data useing React-Query  (Please check why useMutation will fetch api again although params not update!!!!!!!!!)
+## 2,Cache API data useing React-Query  (Please check why useMutation will fetch api again although params not update!!!!!!!!!)
 ### useQuery(for get request)
 ```
 import type {UseQueryResult} from 'react-query;
