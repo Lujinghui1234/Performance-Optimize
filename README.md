@@ -25,7 +25,7 @@ ResponseData,Error
 page:
 import {useGetInfo} from './query';
 
-const {data,isLoading,isError,error} = useGetInfo(params);
+const {data,isLoading,isError,error} = useGetInfo(params);//It will fetch api
 //It can reducing use useState to store data
 
 ```
