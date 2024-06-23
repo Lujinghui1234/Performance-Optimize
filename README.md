@@ -53,7 +53,7 @@ Params
 import {useInputterSubmit} from './query';
 
 const {mutate,data,isLoading,error,isError} = useInputterSubmit;
-//It can reduce using useState to store data and useEffect to call api.
+//It can reduce using useState to store data.
 
 useEffect(
 ()=>{
