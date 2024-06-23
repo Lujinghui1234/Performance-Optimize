@@ -3,7 +3,8 @@
 ### dayjs(https://day.js.org/)
 dayjs 是一个轻量级的处理时间格式的第三方库，仅需要2kb，内存占用极小，同时拥有和moment相同的API，用dayjs替换项目中的moment
 
-## 2,Cache API data useing React-Query  (Please check why useMutation will fetch api again although params not update!!!!!!!!!)
+## 2,Cache API Data By Useing React-Query  (Please check why useMutation will fetch api again although params not update!!!!!!!!!)
+  优点：不仅可以缓存数据，还可以减少useEffect和useState的使用
 ### useQuery(for get request)
 ```
 import type {UseQueryResult} from 'react-query;
@@ -26,7 +27,7 @@ page:
 import {useGetInfo} from './query';
 
 const {data,isLoading,isError,error} = useGetInfo(params);//It will fetch api
-//It can reducing use useState to store data
+//It can reduce using useState to store data and useEffect to call api.
 
 ```
 
@@ -52,7 +53,7 @@ Params
 import {useInputterSubmit} from './query';
 
 const {mutate,data,isLoading,error,isError} = useInputterSubmit;
-//It can reducing use useState to store data
+//It can reduce using useState to store data and useEffect to call api.
 
 useEffect(
 ()=>{
